@@ -81,4 +81,15 @@ body {
 		@include backgroundImgageContain;
 		@include setHeightWidth(200px, 180px);
 	}
+
+	// SECTION TESTIMONIALS
+
+	#testimonial {
+		@include spacingSection;
+		text-align: center;
+	}
+
+	.carousel__img {
+		height: 570px;
+	}
 }
