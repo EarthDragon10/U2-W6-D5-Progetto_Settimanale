@@ -130,6 +130,24 @@ body {
 		@include flexRow;
 		@include spacingSection;
 		padding: 1.5rem 0;
+
+		.socials {
+			a {
+				text-decoration: none;
+				.dark-mode {
+					@include dark-mode(true);
+				}
+
+				.light-mode {
+					@include dark-mode(false);
+				}
+			}
+
+			// i {
+			// 	font-size: 2rem;
+			// 	@include spacingMarginRight(50px);
+			// }
+		}
 	}
 
 	#contacts ul,

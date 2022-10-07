@@ -132,6 +132,17 @@ body #footer {
   padding: 0 3rem;
   padding: 1.5rem 0;
 }
+body #footer .socials a {
+  text-decoration: none;
+}
+body #footer .socials a .dark-mode {
+  background-color: black;
+  color: white;
+}
+body #footer .socials a .light-mode {
+  background-color: rgb(238, 238, 238);
+  color: black;
+}
 body #contacts ul,
 body #where-are ul {
   list-style-type: none;
