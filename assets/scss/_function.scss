@@ -1,0 +1,12 @@
+@import "./variables";
+@import "./mixin";
+
+@mixin dark-mode($theme) {
+	@if ($theme) {
+		background-color: $bg-header-footer--dark;
+		color: white;
+	} @else {
+		background-color: $bg-header-footer;
+		color: black;
+	}
+}

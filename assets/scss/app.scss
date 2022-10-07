@@ -1,21 +1,43 @@
 @import "./variables";
 @import "./mixin";
-$assetsImg: "../img";
+@import "./reset.scss";
+@import "./function";
 
 body {
+	// DARK AND LIGHT MODE
+
 	// HEADER
 
-	#socials {
+	#header {
+		@include flexRow;
+		@include setHeaderFooter;
+	}
+
+	.dark-mode {
+		@include dark-mode(true);
+	}
+
+	.light-mode {
+		@include dark-mode(false);
+	}
+
+	.socials {
 		@include flexRow;
 
 		a {
 			text-decoration: none;
-			color: black;
+			.dark-mode {
+				@include dark-mode(true);
+			}
+
+			.light-mode {
+				@include dark-mode(false);
+			}
 		}
 
 		i {
 			font-size: 2rem;
-			@include spacingMarginRight(10px);
+			@include spacingMarginRight(50px);
 		}
 	}
 
@@ -25,7 +47,15 @@ body {
 		@include flexRow;
 
 		li {
-			@include spacingMarginRight(10px);
+			@include spacingMarginRight(15px);
+		}
+
+		.dark-mode {
+			@include dark-mode(true);
+		}
+
+		.light-mode {
+			@include dark-mode(false);
 		}
 
 		a {
@@ -62,7 +92,7 @@ body {
 
 	// SECTION PARTNERSHIP
 
-	#partnership {
+	#partnership__spacing {
 		@include spacingSection;
 	}
 
@@ -84,12 +114,26 @@ body {
 
 	// SECTION TESTIMONIALS
 
-	#testimonial {
+	#testimonials {
 		@include spacingSection;
 		text-align: center;
 	}
 
 	.carousel__img {
 		height: 570px;
+	}
+
+	// FOOTER
+
+	#footer {
+		@include setHeaderFooter;
+		@include flexRow;
+		@include spacingSection;
+		padding: 1.5rem 0;
+	}
+
+	#contacts ul,
+	#where-are ul {
+		list-style-type: none;
 	}
 }
