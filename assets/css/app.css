@@ -32,6 +32,7 @@ body .socials {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  gap: 30px;
 }
 body .socials a {
   text-decoration: none;
@@ -46,7 +47,6 @@ body .socials a .light-mode {
 }
 body .socials i {
   font-size: 2rem;
-  margin-right: 50px;
 }
 body #links ul {
   list-style-type: none;

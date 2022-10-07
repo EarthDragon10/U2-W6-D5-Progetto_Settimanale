@@ -23,6 +23,7 @@ body {
 
 	.socials {
 		@include flexRow;
+		gap: 30px;
 
 		a {
 			text-decoration: none;
@@ -37,7 +38,7 @@ body {
 
 		i {
 			font-size: 2rem;
-			@include spacingMarginRight(50px);
+			// @include spacingMarginRight(50px);
 		}
 	}
 
