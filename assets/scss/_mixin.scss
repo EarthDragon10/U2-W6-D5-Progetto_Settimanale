@@ -2,6 +2,7 @@
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	flex-wrap: wrap;
 }
 
 @mixin flexColumn {
@@ -9,8 +10,31 @@
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
+	flex-wrap: wrap;
+}
+
+@mixin flexCenter {
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
 }
 
 @mixin spacingMarginRight($spacing) {
 	margin-right: $spacing;
+}
+
+@mixin spacingSection {
+	margin-top: 3rem;
+	padding: 0 3rem;
+}
+
+@mixin backgroundImgageContain {
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+@mixin setHeightWidth($height, $width) {
+	height: $height;
+	width: $width;
 }

@@ -1,5 +1,6 @@
 @import "./variables";
 @import "./mixin";
+$assetsImg: "../img";
 
 body {
 	// HEADER
@@ -41,5 +42,43 @@ body {
 				border: 1px solid blueviolet;
 			}
 		}
+	}
+
+	// ELEMENTI DEL MAIN
+
+	// SECTION HERO
+
+	#hero {
+		@include spacingSection;
+	}
+
+	#hero__img {
+		background-image: url("../img/team-work.jpg");
+		@include backgroundImgageContain // background-position: center;
+			// background-size: contain;
+			// background-repeat: no-repeat;
+;
+	}
+
+	// SECTION PARTNERSHIP
+
+	#partnership {
+		@include spacingSection;
+	}
+
+	#partnership__title {
+		text-align: center;
+	}
+
+	#partnership__box {
+		@include flexRow;
+		gap: 15px;
+	}
+
+	.partnership__box--img {
+		background-image: url("../img/logo/attack_titan.png");
+
+		@include backgroundImgageContain;
+		@include setHeightWidth(200px, 180px);
 	}
 }
