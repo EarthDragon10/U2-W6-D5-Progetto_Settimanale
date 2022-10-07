@@ -1,0 +1,36 @@
+body #socials {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body #socials a {
+  text-decoration: none;
+  color: black;
+}
+body #socials i {
+  font-size: 2rem;
+  margin-right: 10px;
+}
+body #links ul {
+  list-style-type: none;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body #links ul li {
+  margin-right: 10px;
+}
+body #links ul a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.5s ease-in-out;
+}
+body #links ul a:hover {
+  color: blueviolet;
+  transform: scale(1.2);
+  border-radius: 8px;
+  background-color: white;
+  padding: 2px 4px;
+  border: 1px solid blueviolet;
+}
