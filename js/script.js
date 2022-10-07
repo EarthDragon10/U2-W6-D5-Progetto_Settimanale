@@ -28,8 +28,8 @@ function addDarkMode() {
 	btnDarkMode.classList.add("dark-mode");
 
 	for (let i = 0; i < linksItemHeader.length; i++) {
-		linksItemHeader[i].remove("light-mode");
-		linksItemHeader[i].add("dark-mode");
+		linksItemHeader[i].classList.remove("light-mode");
+		linksItemHeader[i].classList.add("dark-mode");
 	}
 }
 
@@ -45,7 +45,7 @@ function addLightMode() {
 	btnDarkMode.classList.add("light-mode");
 
 	for (let i = 0; i < linksItemHeader.length; i++) {
-		linksItemHeader[i].remove("dark-mode");
-		linksItemHeader[i].add("light-mode");
+		linksItemHeader[i].classList.remove("dark-mode");
+		linksItemHeader[i].classList.add("light-mode");
 	}
 }
