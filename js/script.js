@@ -12,9 +12,9 @@ function changeDarkMode() {
 	} else {
 		addLightMode();
 	}
-
-	// headerElement.classList.toggle("dark-mode");
 }
+
+// Usare il metodo replace invece che .add e .remove
 
 function addDarkMode() {
 	headerElement.classList.remove("light-mode");

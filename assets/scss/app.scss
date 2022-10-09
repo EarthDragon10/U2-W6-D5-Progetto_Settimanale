@@ -36,9 +36,10 @@ body {
 			}
 		}
 
+		// Provare a sistemare esteticamente le icone, eliminare gli orrendi spazi bianchi
+
 		i {
 			font-size: 2rem;
-			// @include spacingMarginRight(50px);
 		}
 	}
 
@@ -58,6 +59,8 @@ body {
 		.light-mode {
 			@include dark-mode(false);
 		}
+
+		// Trovare un modo tale che, passando il mous sopra, i link non si spostino piú in orizzontale
 
 		a {
 			text-decoration: none;
