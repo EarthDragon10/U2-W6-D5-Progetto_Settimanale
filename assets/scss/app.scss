@@ -78,6 +78,24 @@ body {
 		}
 	}
 
+	// #dark-mode {
+
+	// }
+
+	#dark-mode {
+		.dark-mode {
+			@include btn-change-dark-mode(true);
+			// border: 1px white solid;
+			// border-radius: 8px;
+		}
+
+		.light-mode {
+			@include btn-change-dark-mode(false);
+			// border: 1px solid black;
+			// border-radius: 8px;
+		}
+	}
+
 	// ELEMENTI DEL MAIN
 
 	// SECTION HERO
